@@ -2,12 +2,29 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Header from './Header';
+import Footer from './Footer';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const header = ReactDOM.createRoot(document.getElementById('header'));
+const footer = ReactDOM.createRoot(document.getElementById('footer'));
+
+header.render(
+  <React.StrictMode>
+    <Header />
+  </React.StrictMode>
+);
+
 root.render(
   <React.StrictMode>
     <App />
+  </React.StrictMode>
+);
+
+footer.render(
+  <React.StrictMode>
+    <Footer />
   </React.StrictMode>
 );
 
